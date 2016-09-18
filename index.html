@@ -12,14 +12,8 @@
   <link rel="stylesheet" href="css/pushy.css">
   <link rel="stylesheet" href="css/style.css">
 
-
-
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
-	<![endif]-->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.1.0.js"></script>
   <script type="text/javascript" src="js/jquery.mixitup.js"></script>
-	
 	<script type="text/javascript">
 	$(function () {
 		
@@ -35,7 +29,7 @@
     			  filter: '.filter'	
     		  },
     		  load: {
-      		  filter: '.app'  
+      		  filter: '.architektur'  
       		}     
 				});								
 			
@@ -49,7 +43,12 @@
 		
 	});	
 	</script>
-
+  <script type="text/javascript" src="js/typed.js"></script>
+  <script type="text/javascript" src="js/scroll.js"></script>
+  <script type="text/javascript" src="js/front.js"></script>
+  <!--[if lt IE 9]>
+  	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+  <![endif]-->
 </head>
 <header>
 <!-- Pushy Menu -->
@@ -88,18 +87,46 @@
 </header>
 <body>
 
-<!-- <div id="info">
-	<div class="info-wrapper">
-		
-	</div>
-</div>	 -->
+<!-- typewriter info -->
+   <!-- <section id="intro" class="text-intro no-padding-bottom">
+		<div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-10">
+            <div class="type-wrap">
+                <div id="typed-strings">
+                    <p>Hi<span class="text-primary">!</span></p>
+                    <p>My Name is <span class="text-primary">Mathias</span>.</p>
+                    <p>I'm a <em>Product Owner</em> by day...</p>
+                    <p>... and a <em>wannabe coder</em> by night.</p>
+                    <p>I <em>code</em> websites and web apps.</p>
+                    <p>I <em>use</em> PHP, JS, jQuery, Ruby on Rails</p>
+                    <p>This <span class="text-primary">social media-thing</span>...</p>
+                    <p>...is also familiar to me.</p>
+                    <p>Check out my <span class="text-primary">portfolio</span> below.</p>
+                    <p>If you like to work with me...</p>
+                    <p>... get in <span class="text-primary">contact</span>!</p>
+                </div>
+                <span id="typed" style="white-space:pre;"></span>
+                <div>
+                <a href="#about"><button class="buttons">About me</button></a>
+                <a href="#portfolio"><button class="buttons">Portfolio</button></a>
+                <a href="#contact"><button class="buttons">Contact</button></a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ -->
+
+
 
   <!--portfolio-->
 	<div class="container">
 
 		<ul id="filters" class="clearfix">
-			<li><span class="filter active" data-filter=".app, .card, .icon">All</span></li>
-			<li><span class="filter" data-filter=".app">Architektur</span></li>
+			<li><span class="filter active" data-filter=".architektur, .card, .icon">All</span></li>
+			<li><span class="filter" data-filter=".architektur">Architektur</span></li>
 			<li><span class="filter" data-filter=".card">Objektkunst</span></li>
 			<li><span class="filter" data-filter=".icon">Moebel</span></li>
 		</ul>
@@ -119,9 +146,9 @@
 				</div>
 			</div>				
 
-			<div class="portfolio app" data-cat="app">
+			<div class="portfolio architektur" data-cat="architektur">
 				<div class="portfolio-wrapper">			
-					<img src="img/portfolios/app/1.jpg" alt="" />
+					<img src="img/portfolios/architektur/1.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
 							<a class="text-title">Visual Infography</a>
@@ -158,9 +185,9 @@
 				</div>
 			</div>	
 						
-			<div class="portfolio app" data-cat="app">
+			<div class="portfolio architektur" data-cat="archiektur">
 				<div class="portfolio-wrapper">
-					<img src="img/portfolios/app/3.jpg" alt="" />
+					<img src="img/portfolios/architektur/3.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
 							<a class="text-title">Weatherette</a>
@@ -210,9 +237,9 @@
 				</div>
 			</div>																																							
 			
-			<div class="portfolio app" data-cat="app">
+			<div class="portfolio architektur" data-cat="architektur">
 				<div class="portfolio-wrapper">			
-					<img src="img/portfolios/app/2.jpg" alt="" />
+					<img src="img/portfolios/architektur/2.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
 							<a class="text-title">Graph Plotting</a>
@@ -424,21 +451,35 @@
 	</div><!-- container -->
 
   <!--about-->
+  <section id="about">
   <div class="container">
     <div class="about">
       <h1>About</h1>
+      <div>
+      </div>
     </div>
   </div>
+  </section>
 
   <!--contact-->
+  <section id="contact">
   <div class="container">
     <div class="about">
       <h1>Contact</h1>
+        <div>
+        </div>
     </div>
   </div>
+  </section>
+
+  <!-- map -->
+  <section id="map">
+  	<div id="map"></div>
+  </section>
 
 </body>
 <footer>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" src="js/pushy.js"></script>
 </footer>
 </html>

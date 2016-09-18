@@ -29,22 +29,6 @@
 
 	$(function(){
 
-	$('#Container').mixItUp({
-	    animation: {
-	    	enable: true,
-	    	effects: 'fade scale',
-	    	duration: 600,
-	    	easing: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)',
-	    	perspectiveDistance: '3000',
-	    	perspectiveOrigin: '50% 50%',
-	    	queue: false,
-	    	queueLimit: 1,
-	    	animateChangeLayout: false,
-	    	animateResizeContainer: true,
-	    	animateResizeTargets: false,
-	    	staggerSequence: false,
-	    	reverseOut: false	    }
-	});
 
 	    $("#typed").typed({
 	        // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],

@@ -1,26 +1,26 @@
-$(function () {
+// $(function () {
     
-  var filterList = {
+//   var filterList = {
   
-    init: function () {
+//     init: function () {
     
-      // MixItUp plugin
-      // http://mixitup.io
-      $('#portfoliolist').mixItUp({
-        selectors: {
-          target: '.portfolio',
-          filter: '.filter' 
-        },
-        load: {
-          filter: '.architektur' // show app tab on first load
-        }     
-      });               
+//       // MixItUp plugin
+//       // http://mixitup.io
+//       $('#portfoliolist').mixItUp({
+//         selectors: {
+//           target: '.portfolio',
+//           filter: '.filter' 
+//         },
+//         load: {
+//           filter: '.architektur' // show app tab on first load
+//         }     
+//       });               
     
-    }
+//     }
 
-  };
+//   };
   
-  // Run the show!
-  filterList.init();
+//   // Run the show!
+//   filterList.init();
   
-});   
+// });   

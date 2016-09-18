@@ -12,6 +12,6 @@ $(function() {
     }
   });
 
-  $('.buttons').hide().delay(35000).fadeIn(100);
+  $('.buttons').hide().delay(1000).fadeIn(100);
 
 });
